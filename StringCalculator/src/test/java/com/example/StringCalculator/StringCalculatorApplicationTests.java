@@ -27,4 +27,11 @@ class StringCalculatorApplicationTests {
 		Assertions.assertEquals(5,Stringcal.add("3,2"));
 	}
 
+	@Test
+	void StringcalMulDigit()
+	{
+		Assertions.assertEquals(6,Stringcal.add("1,2,3"));
+	}
+
+	
 }
