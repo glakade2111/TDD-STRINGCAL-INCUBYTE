@@ -10,9 +10,15 @@ class StringCalculatorApplicationTests {
 	@Test
 	void StringcalculatorEmpty() {
 
-		Stringcal calculator=new Stringcal();
 
 		Assertions.assertEquals(0,Stringcal.add(""));
+	}
+
+	@Test
+	void StringcalOneDigit()
+	{
+
+		Assertions.assertEquals(3,Stringcal.add("3"));
 	}
 
 }
