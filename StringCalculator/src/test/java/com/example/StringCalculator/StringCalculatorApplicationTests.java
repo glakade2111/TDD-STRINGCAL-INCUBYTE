@@ -50,11 +50,10 @@ class StringCalculatorApplicationTests {
 	{
 		Assertions.assertEquals(3,Stringcal.add("1\n2"));
 	}
-
 	@Test
-	void StringcalCustomDelimeter()
-	{
-		Assertions.assertEquals(3,Stringcal.add("//\n;1;2;3"));
+	void StringcalCustomDelimiter() {
+		Assertions.assertEquals(6, Stringcal.add("//;\n1;2;3")); // Change from 3 to 6 because 1 + 2 + 3 = 6
 	}
+
 
 }
