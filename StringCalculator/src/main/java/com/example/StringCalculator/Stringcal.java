@@ -13,6 +13,14 @@ public class Stringcal {
     String delimeter="\n|,";
 
 
+//        if(num.startsWith("//"))
+//        {
+//            int newlineIndex = num.indexOf("\n");
+//            String customDelimiter = num.substring(2, newlineIndex);
+//            delimeter = customDelimiter + "|" + delimeter;
+//            num = num.substring(newlineIndex + 1);
+//
+//        }
         String addnum[]=num.split(delimeter);
 
 

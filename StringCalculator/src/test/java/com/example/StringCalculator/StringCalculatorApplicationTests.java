@@ -51,4 +51,10 @@ class StringCalculatorApplicationTests {
 		Assertions.assertEquals(3,Stringcal.add("1\n2"));
 	}
 
+	@Test
+	void StringcalCustomDelimeter()
+	{
+		Assertions.assertEquals(3,Stringcal.add("//\n;1;2;3"));
+	}
+
 }
