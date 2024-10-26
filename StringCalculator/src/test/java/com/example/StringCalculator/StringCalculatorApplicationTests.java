@@ -48,7 +48,7 @@ class StringCalculatorApplicationTests {
 	@Test
 	void StringcalForNewline()
 	{
-		Assertions.assertEquals(3,"1\n2");
+		Assertions.assertEquals(3,Stringcal.add("1\n2"));
 	}
 
 }

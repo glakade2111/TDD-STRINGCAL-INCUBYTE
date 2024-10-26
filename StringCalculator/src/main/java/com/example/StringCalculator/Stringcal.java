@@ -10,12 +10,22 @@ public class Stringcal {
             return 0;
         }
 
-        String addnum[]=num.split(",");
+    String delimeter="\n|,";
+
+
+        String addnum[]=num.split(delimeter);
+
 
             for(String add:addnum)
             {
-                sum+=Integer.parseInt(add);
+                if(Integer.parseInt(add)>0) {
+                       sum += Integer.parseInt(add);
+                }else {
+
+                    throw new IllegalArgumentException("Negative numbers");
+                }
             }
+
         return sum;
     }
 
