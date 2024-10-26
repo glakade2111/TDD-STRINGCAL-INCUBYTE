@@ -33,5 +33,10 @@ class StringCalculatorApplicationTests {
 		Assertions.assertEquals(6,Stringcal.add("1,2,3"));
 	}
 
-	
+	@Test
+	void StringcalNegativeNum()
+	{
+		Assertions.assertEquals(IllegalArgumentException.class,Stringcal.add("-1,2"));
+	}
+
 }
