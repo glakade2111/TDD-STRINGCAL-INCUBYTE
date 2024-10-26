@@ -34,9 +34,21 @@ class StringCalculatorApplicationTests {
 	}
 
 	@Test
-	void StringcalNegativeNum()
+	void StringcalNegateNum() {
+		Exception exception = Assertions.assertThrows(IllegalArgumentException.class, () -> {
+			Stringcal.add("1,-2,3,-4");
+		});
+
+		String expectedMessage = "Negative numbers";
+		String actualMessage = exception.getMessage();
+
+		Assertions.assertEquals(expectedMessage, actualMessage);
+	}
+
+	@Test
+	void StringcalForNewline()
 	{
-		Assertions.assertEquals(IllegalArgumentException.class,Stringcal.add("-1,2"));
+		Assertions.assertEquals(3,"1\n2");
 	}
 
 }
