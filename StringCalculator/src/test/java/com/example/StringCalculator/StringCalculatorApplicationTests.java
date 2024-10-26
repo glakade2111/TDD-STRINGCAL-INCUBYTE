@@ -21,4 +21,10 @@ class StringCalculatorApplicationTests {
 		Assertions.assertEquals(3,Stringcal.add("3"));
 	}
 
+	@Test
+	void StringcalTwoDigit()
+	{
+		Assertions.assertEquals(5,Stringcal.add("3,2"));
+	}
+
 }
